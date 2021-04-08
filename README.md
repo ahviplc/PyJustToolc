@@ -41,7 +41,7 @@ https://gitee.com/ahviplc/JustToolc
 ❤PyJustToolc > Python Tools For U (You)❤
 ```
 
-## 打包发布Py模块
+## 打包上传发布Py模块
 
 > 打包发布Py模块,打包并上传到PyPI
 
@@ -151,7 +151,7 @@ test_suite
 来跑单元测试，再也不需要单独再写一个脚本例如utools_test.py这样来跑单元测试了
 ```
 
-## bdist命令
+### 扩展-bdist命令
 > bdist命令是一个二进制分发包，或称作安装程序。该命令可以生成模板操作系统的安装程序。
 
 ```markdown
@@ -169,7 +169,7 @@ python setup.py bdist --format=msi  # 同样是创建"*.msi"的文件
 > python setup.py bdist --format=gztar  # 创建"*.tar.gz"文件
 ```
 
-## 将python打包成egg包或者whl包(本质上是一个zip文件)
+### 将python打包成egg包或者whl包(本质上是一个zip文件)
 ```markdown
 安装wheel模块
 > pip install wheel
@@ -184,7 +184,7 @@ python setup.py bdist --format=msi  # 同样是创建"*.msi"的文件
 > python setup.py sdist bdist_wheel  # 打"*.tar.gz 和 *.whl
 ```
 
-## 上传
+### 上传到pypi
 ```markdown
 > twine upload dist/*
 
