@@ -143,9 +143,8 @@ classifier
 test_suite
 
 这个参数可以帮助我们使用
-
 > python setup.py test
-来跑单元测试，再也不需要单独再写一个脚本例如run_tests.py这样来跑单元测试了
+来跑单元测试，再也不需要单独再写一个脚本例如utools_test.py这样来跑单元测试了
 ```
 
 ## bdist命令
@@ -194,7 +193,7 @@ twine 提示输入 pypi 账号和密码，上传成功否就能在自己的pypi�
 > twine upload --skip-existing dist/* 
 ```
 
-## 待完善
+## 待完善,带复看
 ```markdown
 packages=find_packages(where='PyJustToolc', include=('utools','example'),exclude=("*.tests", "*.tests.*", "tests.*", "tests")), # include all packages under automated
 ```
@@ -236,6 +235,9 @@ https://pypi.org/
 
 TestPyPI · The Python Package Index 测试
 https://test.pypi.org/
+
+Python包管理工具setuptools之setup函数参数详解 - 一切都是当下 - 博客园
+https://www.cnblogs.com/potato-chip/p/9106225.html
 ```
 
 ## about me

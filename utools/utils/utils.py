@@ -51,7 +51,7 @@ def to_diy_date_datetime_max_min_time(diy_date, type, is_format):
 
 
 # 传入一个datetime 获取其 年月日
-# @param 传入的datetime
+# @param in_datetime 传入的datetime
 # @return 输出格式为 2021,04,06
 # 输出均是字符串
 def get_year_month_day_from_datetime(in_datetime):

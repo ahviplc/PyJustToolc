@@ -16,6 +16,9 @@ class BaseModuleTest(unittest.TestCase):
         print('测试其他...')
         self.assertEqual(1, 1)
 
+    def test5(self):
+        utools.easy_say.say_hello_world('LC')
+
 
 # 如果utools/__init__.py:18中__all__去掉get_random 则不会找到Ta【NameError: name 'get_random' is not defined】
 # from utools import *
