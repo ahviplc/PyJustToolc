@@ -45,6 +45,15 @@ https://gitee.com/ahviplc/JustToolc
 
 > 打包发布Py模块,打包并上传到PyPI
 
+快速一览
+
+常用一次性执行sdist和bdist_wheel两个 打包生成一个源码包*.tar.gz和一个*.whl即可
+> python setup.py sdist bdist_wheel
+
+上传pypi
+
+> twine upload dist/*
+
 ### 具体步骤
 ```markdown
 1. 打包和安装第三方包的工具
@@ -180,8 +189,8 @@ python setup.py bdist --format=msi  # 同样是创建"*.msi"的文件
 > python setup.py bdist_egg  # 打"*.egg"的包
 > python setup.py bdist_wheel  # 打"*.whl"的包
 
-一次性执行sdist和bdist_wheel两个
-> python setup.py sdist bdist_wheel  # 打"*.tar.gz 和 *.whl
+一次性执行sdist和bdist_wheel两个 生成一个源码包*.tar.gz和一个*.whl即可
+> python setup.py sdist bdist_wheel  # 打"*.tar.gz 和 *.whl的包
 ```
 
 ### 上传到pypi
