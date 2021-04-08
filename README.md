@@ -36,6 +36,16 @@ JustToolc: ❤JustToolc > Java Tools For U (You) ❤
 https://gitee.com/ahviplc/JustToolc
 ```
 
+> 我的Go语言的GoJustToolc项目地址:
+
+```markdown
+ahviplc/GoJustToolc: ❤GoJustToolc > Go Tools For U (You) ❤
+https://github.com/ahviplc/GoJustToolc
+
+GoJustToolc: ❤GoJustToolc > Go Tools For U (You) ❤
+https://gitee.com/ahviplc/GoJustToolc
+```
+
 ## slogan
 ```markdown
 ❤PyJustToolc > Python Tools For U (You)❤
