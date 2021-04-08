@@ -228,16 +228,16 @@ http://c.biancheng.net/view/2401.html
 
 打包发布Python模块的方法详解_python_脚本之家 - 此打包根据这个做的
 https://www.jb51.net/article/92789.htm
+||
+GitHub - PytLab/VASPy: Manipulating VASP files with Python.
+https://github.com/PytLab/VASPy
 
 Python的打包工具(setup.py)实战篇 - 尹正杰 - 博客园 - 还有这个 - 很不错,很全
 https://www.cnblogs.com/yinzhengjie/p/14124623.html
 
-GitHub - PytLab/VASPy: Manipulating VASP files with Python.
-https://github.com/PytLab/VASPy
-
 手把手教你打包Python库并创建自己的PyPI项目 - 简书 - 也可参考
 https://www.jianshu.com/p/6019aee27883
-
+||
 GitHub - YaokaiYang-assaultmaster/py3PortScanner: 🎃Port scanner for Python >= 3.0! Faster! Stronger! Better!
 https://github.com/YaokaiYang-assaultmaster/py3PortScanner
 
