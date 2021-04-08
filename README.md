@@ -55,7 +55,7 @@ https://gitee.com/ahviplc/GoJustToolc
 
 > 打包发布Py模块,打包并上传到PyPI
 
-快速一览
+### 快速一览
 
 常用一次性执行sdist和bdist_wheel两个 打包生成一个源码包*.tar.gz和一个*.whl即可
 > python setup.py sdist bdist_wheel
