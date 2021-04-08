@@ -44,7 +44,7 @@ Then you can install utools to canopy::
 
 install_requires = [
     'twine>=3.4.1',
-    'pony>=0.7.14',
+    'wheel>=0.33.6',
 ]
 
 license = 'LICENSE'

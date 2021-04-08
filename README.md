@@ -15,8 +15,12 @@ banner生成网址:
 > http://patorjk.com/software/taag/#p=testall&f=Graffiti&t=PyJustToolc
 
 ## fork me
+待建立
+
 ahviplc/PyJustToolc: ❤PyJustToolc > Python Tools For U (You) ❤
 > https://github.com/ahviplc/PyJustToolc
+
+已建立  
 
 PyJustToolc: ❤PyJustToolc > Go Tools For U (You) ❤
 > https://gitee.com/ahviplc/PyJustToolc
