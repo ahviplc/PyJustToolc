@@ -21,7 +21,7 @@ here = os.path.abspath(os.path.dirname(__file__))  # 'C:\\_developSoftKu\\ideaIU
 #     REQUIREMENTS = f.read()
 
 # 从README-PYPI.rst读取出内容 当 LONG_DESCRIPTION
-with open(os.path.join(here, 'README-PYPI.rst'), encoding='utf-8') as f:
+with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
 
 # 赋值给 long_description
