@@ -93,6 +93,11 @@ if __name__ == '__main__':
 常用一次性执行sdist和bdist_wheel和bdist --format=zip三个 打包生成一个源码包*.tar.gz和一个*.whl和一个*.zip即可
 > python setup.py sdist bdist_wheel bdist --format=zip
 
+Only one sdist may be uploaded per release.
+所以一次性执行sdist和bdist_wheel,打包生成一个源码包*.tar.gz和一个*.whl
+再使用twine进行上传
+> python setup.py sdist bdist_wheel
+
 上传pypi
 
 > twine upload dist/*
