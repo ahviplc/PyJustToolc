@@ -5,6 +5,8 @@ PyJustToolc
 
 PyJustToolc: ❤PyJustToolc(utoolc) > Python Tools For U (You)❤
 
+    https://github.com/ahviplc/PyJustToolc
+
     https://gitee.com/ahviplc/PyJustToolc
 
 slogan
