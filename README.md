@@ -34,6 +34,17 @@ ahviplc/PyJustToolc: ❤PyJustToolc(utoolc) > Python Tools For U (You)❤
 PyJustToolc: ❤PyJustToolc(utoolc) > Python Tools For U (You)❤
 > https://gitee.com/ahviplc/PyJustToolc
 
+## pypi
+### Maintainers
+
+Profile of ahviplc · PyPI
+> https://pypi.org/user/ahviplc/
+
+### project
+
+utoolc · PyPI
+> https://pypi.org/project/utoolc/
+
 ## who is who
 > 我的Java语言的JustToolc项目地址:
 
@@ -346,7 +357,7 @@ https://www.cnblogs.com/potato-chip/p/9106225.html
 Python编程：将markdown格式转换为rst格式_彭世瑜的博客-CSDN博客
 https://blog.csdn.net/mouday/article/details/81876270
 
-CloudConvert - rst和md互转 在线网站
+CloudConvert - rst和md互转 在线网站 - 不会写rst,可先写成md,再转成rst使用.
 https://cloudconvert.com/
 
 python发布包到pypi的踩坑记录 -配置【.pypirc】- rongpmcu - 博客园

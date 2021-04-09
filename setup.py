@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# import os
+import os
 from setuptools import setup, find_packages
 
 from utoolc import __version__ as version
@@ -14,54 +14,18 @@ description = "❤PyJustToolc(utoolc) > Python Tools For U (You)❤"
 
 # 代码可用
 # 有的将README成为其long_description 这里是读取其内容的代码
-# here = os.path.abspath(os.path.dirname(__file__))  # 'C:\\_developSoftKu\\ideaIU-2019.1.3.win\\#CodeKu\\pythonKu\\PyJustToolc'
+here = os.path.abspath(os.path.dirname(__file__))  # 'C:\\_developSoftKu\\ideaIU-2019.1.3.win\\#CodeKu\\pythonKu\\PyJustToolc'
 # with open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
 #     README = f.read()
 # with open(os.path.join(here, 'requirements.txt'), encoding='utf-8') as f:
 #     REQUIREMENTS = f.read()
 
-long_description = """
-PyJustToolc
-===========
+# 从README-PYPI.rst读取出内容 当 LONG_DESCRIPTION
+with open(os.path.join(here, 'README-PYPI.rst'), encoding='utf-8') as f:
+    LONG_DESCRIPTION = f.read()
 
-    PyJustToolc(utoolc)
-
-PyJustToolc: ❤PyJustToolc(utoolc) > Python Tools For U (You)❤ >
-https://gitee.com/ahviplc/PyJustToolc
-
-slogan
-------
-
-.. code:: markdown
-
-    ❤PyJustToolc(utoolc) > Python Tools For U (You)❤
-
-如何使用？
-----------
-
-    安装导入,即可使用.
-
-安装包
-~~~~~~
-
-1. Via pip(recommend):: > pip install utoolc
-2. Via easy\_install:: > easy\_install utoolc
-3. From source:: > python setup.py install
-
-使用包
-~~~~~~
-
-.. code:: python
-
-    import utoolc
-
-    if __name__ == '__main__':
-        utoolc.utils.print_a_line()
-        print(utoolc.__author__)
-        print(utoolc.get_random.get_random_str_with_counts(10))
-        utoolc.easy_say.say_hello_world('LC')
-        utoolc.utils.print_a_line()
-"""
+# 赋值给 long_description
+long_description = LONG_DESCRIPTION
 
 install_requires = [
     'twine>=3.4.1',
@@ -78,10 +42,9 @@ name = 'utoolc'
 platforms = ['win', 'linux']
 # github
 # url = 'https://github.com/ahviplc/PyJustToolc'
-# download_url = 'https://github.com/ahviplc/PyJustToolc'
 # gitee
 url = 'https://gitee.com/ahviplc/PyJustToolc'
-download_url = 'https://gitee.com/ahviplc/PyJustToolc'
+download_url = 'https://pypi.org/project/utoolc/#files'
 classifiers = [
     'Development Status :: 3 - Alpha',
     'Topic :: Text Processing',
