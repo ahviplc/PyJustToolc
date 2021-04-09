@@ -45,6 +45,10 @@ Profile of ahviplc · PyPI
 utoolc · PyPI
 > https://pypi.org/project/utoolc/
 
+### libraries.io
+utoolc 0.1.1 on PyPI - Libraries.io
+> https://libraries.io/pypi/utoolc
+
 ## who is who
 > 我的Java语言的JustToolc项目地址:
 
@@ -76,11 +80,19 @@ https://gitee.com/ahviplc/GoJustToolc
 > 安装导入,即可使用.
 
 ### 安装包
-1. Via pip(recommend)::
+1. Via pip(recommend):
 > pip install utoolc
-2. Via easy_install::
+
+1.1 官方镜像 pip:
+> pip install utoolc -i https://pypi.org/simple/
+
+1.2 阿里云镜像 pip:
+> pip install utoolc -i https://mirrors.aliyun.com/pypi/simple/
+
+2. Via easy_install:
 > easy_install utoolc
-3. From source::
+
+3. From source:
 > python setup.py install
 
 ### 使用包
