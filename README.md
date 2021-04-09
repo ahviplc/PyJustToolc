@@ -17,12 +17,12 @@ banner生成网址:
 ## fork me
 待建立
 
-ahviplc/PyJustToolc: ❤PyJustToolc > Python Tools For U (You) ❤
+ahviplc/PyJustToolc: ❤PyJustToolc(utoolc) > Python Tools For U (You)❤
 > https://github.com/ahviplc/PyJustToolc
 
 已建立  
 
-PyJustToolc: ❤PyJustToolc > Go Tools For U (You) ❤
+PyJustToolc: ❤PyJustToolc(utoolc) > Python Tools For U (You)❤
 > https://gitee.com/ahviplc/PyJustToolc
 
 ## who is who
@@ -48,7 +48,31 @@ https://gitee.com/ahviplc/GoJustToolc
 
 ## slogan
 ```markdown
-❤PyJustToolc > Python Tools For U (You)❤
+❤PyJustToolc(utoolc) > Python Tools For U (You)❤
+```
+
+## 如何使用？
+
+> 安装导入,即可使用.
+
+### 安装包
+1. Via pip(recommend)::
+> pip install utoolc
+2. Via easy_install::
+> easy_install utoolc
+3. From source::
+> python setup.py install
+
+### 使用包
+```python
+import utoolc
+
+if __name__ == '__main__':
+    utoolc.utils.print_a_line()
+    print(utoolc.__author__)
+    print(utoolc.get_random.get_random_str_with_counts(10))
+    utoolc.easy_say.say_hello_world('LC')
+    utoolc.utils.print_a_line()
 ```
 
 ## 打包上传发布Py模块
@@ -97,10 +121,10 @@ setup()函数，此函数的参数指定了如何配置自己的项目。
 > python setup.py sdist
 
 基于我们刚刚打包的文件进行安装
-> pip install .\dist\PyJustToolc-0.1.0.tar.gz 
+> pip install .\dist\utoolc-0.1.0.tar.gz 
 
 卸载咱们刚刚安装的包
-> pip uninstall PyJustToolc
+> pip uninstall utoolc
 
 setup.cfg
 此文件包含了构建时候的一些默认参数例如构建bdist_wheel的时候的--universal参数
@@ -115,8 +139,8 @@ universal=1
 README.md
 不用多说
 
-utools/
-此文件夹就是utools源代码所在的包。
+utoolc/
+此文件夹就是utoolc源代码所在的包。
 
 tests/
 此文件夹是一个测试包，包含了一些测试。
@@ -130,7 +154,7 @@ setup()的参数
 
 name
 
-versions = "utools"
+versions = "utoolc"
 是整个项目的名字，打包后会使用此名字和版本号。
 
 version
@@ -167,7 +191,7 @@ test_suite
 
 这个参数可以帮助我们使用
 > python setup.py test
-来跑单元测试，再也不需要单独再写一个脚本例如utools_test.py这样来跑单元测试了
+来跑单元测试，再也不需要单独再写一个脚本例如utoolc_test.py这样来跑单元测试了
 ```
 
 ### 扩展-bdist命令
@@ -218,7 +242,7 @@ twine 提示输入 pypi 账号和密码，上传成功否就能在自己的pypi�
 
 ## 待完善,带复看
 ```markdown
-packages=find_packages(where='PyJustToolc', include=('utools','example'),exclude=("*.tests", "*.tests.*", "tests.*", "tests")), # include all packages under automated
+packages=find_packages(where='PyJustToolc', include=('utoolc','example'),exclude=("*.tests", "*.tests.*", "tests.*", "tests")), # include all packages under automated
 ```
 
 ## 一些链接

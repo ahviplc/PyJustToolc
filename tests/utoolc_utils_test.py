@@ -1,13 +1,13 @@
 import sys
 import time
-from utools.utils import utils
+from utoolc.utils import utils
 # 以下两种使用PrintLogger均可
 # pml.PrintLogger()
-from utools.utils import print_msg_to_log_model as pml
+from utoolc.utils import print_msg_to_log_model as pml
 # PrintLogger()
-from utools.utils.print_msg_to_log_model import PrintLogger as PrintLogger2
+from utoolc.utils.print_msg_to_log_model import PrintLogger as PrintLogger2
 
-from utools.utils.start_to_end_time_consuming import start_and_end
+from utoolc.utils.start_to_end_time_consuming import start_and_end
 
 
 def test():
@@ -19,14 +19,14 @@ def test():
 
 def test2():
     utils.print_a_line(100)
-    sys.stdout = pml.PrintLogger('utools_utils_test.py.log')  # 监听所有的print到log日志 封装类 如不需要打印所有输出print的log日志，隐掉这段即可
+    sys.stdout = pml.PrintLogger('utoolc_utils_test.py.log')  # 监听所有的print到log日志 封装类 如不需要打印所有输出print的log日志，隐掉这段即可
     utils.print_a_line(100)
     utils.print_a_line(100)
 
 
 def test3():
     utils.print_a_line(100)
-    sys.stdout = PrintLogger2('utools_utils_test.py.2.log')  # 监听所有的print到log日志 封装类 如不需要打印所有输出print的log日志，隐掉这段即可
+    sys.stdout = PrintLogger2('utoolc_utils_test.py.2.log')  # 监听所有的print到log日志 封装类 如不需要打印所有输出print的log日志，隐掉这段即可
     utils.print_a_line(100)
     utils.print_a_line(100)
 
