@@ -275,7 +275,7 @@ twine 提示输入 pypi 账号和密码，上传成功否就能在自己的pypi�
 > twine upload --skip-existing dist/* 
 ```
 
-## 待完善,带复看
+## 待完善,待复看
 ```markdown
 packages=find_packages(where='PyJustToolc', include=('utoolc','example'),exclude=("*.tests", "*.tests.*", "tests.*", "tests")), # include all packages under automated
 
@@ -362,14 +362,26 @@ https://test.pypi.org/
 Python包管理工具setuptools之setup函数参数详解 - 一切都是当下 - 博客园
 https://www.cnblogs.com/potato-chip/p/9106225.html
 
-Python编程：将markdown格式转换为rst格式_彭世瑜的博客-CSDN博客
+Python编程：将markdown格式转换为rst格式_彭世瑜的博客-CSDN博客 - 可用的
 https://blog.csdn.net/mouday/article/details/81876270
 
-CloudConvert - rst和md互转 在线网站 - 不会写rst,可先写成md,再转成rst使用.
+CloudConvert - rst和md互转 在线网站 - 不会写rst,可先写成md,再转成rst使用 - 可用的
 https://cloudconvert.com/
 
 python发布包到pypi的踩坑记录 -配置【.pypirc】- rongpmcu - 博客园
 https://www.cnblogs.com/rongpmcu/p/7662821.html
+
+Docverter
+https://docverter.com/
+
+Docverter/docverter: Docverter Server
+https://github.com/docverter/docverter
+
+msabramo/pydocverter: Python client for Docverter service (pandoc as a service)
+https://github.com/msabramo/pydocverter
+
+Docverter/docverter-ruby: The official Docverter Ruby SDK
+https://github.com/docverter/docverter-ruby
 ```
 
 ## about me
@@ -377,3 +389,4 @@ https://www.cnblogs.com/rongpmcu/p/7662821.html
 By LC
 寄语:一人一世界,一树一菩提!~LC
 Version 0.1.0 From 2021
+```
