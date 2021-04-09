@@ -1,18 +1,27 @@
 # PyJustToolc
 
+> PyJustToolc(utoolc)
+
 ```markdown
 __________            ____.               __ ___________           .__          
 \______   \___.__.   |    |__ __  _______/  |\__    ___/___   ____ |  |   ____  
  |     ___<   |  |   |    |  |  \/  ___/\   __\|    | /  _ \ /  _ \|  | _/ ___\ 
  |    |    \___  /\__|    |  |  /\___ \  |  |  |    |(  <_> |  <_> )  |_\  \___ 
  |____|    / ____\________|____//____  > |__|  |____| \____/ \____/|____/\___  >
-           \/                        \/                                      \/ 
-                                                                                            
-                              Full Of ❤Love❤                                                           
+           \/                        \/                                      \/                                                                          
+                            __                .__          
+                     __ ___/  |_  ____   ____ |  |   ____  
+                    |  |  \   __\/  _ \ /  _ \|  | _/ ___\ 
+                    |  |  /|  | (  <_> |  <_> )  |_\  \___ 
+                    |____/ |__|  \____/ \____/|____/\___  >
+                                        \/ 
+                               Full Of ❤Love❤                                                           
 ```
 
 banner生成网址:
 > http://patorjk.com/software/taag/#p=testall&f=Graffiti&t=PyJustToolc
+
+> http://patorjk.com/software/taag/#p=testall&f=Graffiti&t=utoolc
 
 ## fork me
 待建立
@@ -81,12 +90,14 @@ if __name__ == '__main__':
 
 ### 快速一览
 
-常用一次性执行sdist和bdist_wheel两个 打包生成一个源码包*.tar.gz和一个*.whl即可
-> python setup.py sdist bdist_wheel
+常用一次性执行sdist和bdist_wheel和bdist --format=zip三个 打包生成一个源码包*.tar.gz和一个*.whl和一个*.zip即可
+> python setup.py sdist bdist_wheel bdist --format=zip
 
 上传pypi
 
 > twine upload dist/*
+
+> python -m twine upload --repository-url https://upload.pypi.org/legacy/  dist/*
 
 ### 具体步骤
 ```markdown
@@ -243,6 +254,47 @@ twine 提示输入 pypi 账号和密码，上传成功否就能在自己的pypi�
 ## 待完善,带复看
 ```markdown
 packages=find_packages(where='PyJustToolc', include=('utoolc','example'),exclude=("*.tests", "*.tests.*", "tests.*", "tests")), # include all packages under automated
+
+long_description = """
+=====
+❤PyJustToolc(utoolc) > Python Tools For U (You)❤
+=====
+------------
+1. Via pip(recommend)::
+    pip install utoolc
+2. Via easy_install::
+    easy_install utoolc
+3. From source::
+    python setup.py install
+If you want to use **mayavi** to visualize VASP data, it is recommened to install `Canopy environment <https://store.enthought.com/downloads/#default>`_ on your device instead of installing it manually.
+After installing canopy, you can set corresponding aliases, for example:
+.. code-block:: shell
+    alias canopy='/Users/<yourname>/Library/Enthought/Canopy/edm/envs/User/bin/python'
+    alias canopy-pip='/Users/<yourname>/Library/Enthought/Canopy/edm/envs/User/bin/pip'
+    alias canopy-ipython='/Users/<yourname>/Library/Enthought/Canopy/edm/envs/User/bin/ipython'
+    alias canopy-jupyter='/Users/<yourname>/Library/Enthought/Canopy/edm/envs/User/bin/jupyter'
+Then you can install utoolc to canopy::
+    canopy-pip install utoolc
+"""
+```
+
+### .pypirc
+> 下面为.pypirc内容
+```text
+[distutils]
+index-servers =
+  pypi
+  pypitest
+
+[pypi]
+repository: https://upload.pypi.org/legacy/
+username: ahviplc
+password: ###
+
+[pypitest]
+repository: https://test.pypi.org/legacy/
+username: ahviplc
+password: ###
 ```
 
 ## 一些链接
@@ -285,6 +337,15 @@ https://test.pypi.org/
 
 Python包管理工具setuptools之setup函数参数详解 - 一切都是当下 - 博客园
 https://www.cnblogs.com/potato-chip/p/9106225.html
+
+Python编程：将markdown格式转换为rst格式_彭世瑜的博客-CSDN博客
+https://blog.csdn.net/mouday/article/details/81876270
+
+CloudConvert - rst和md互转 在线网站
+https://cloudconvert.com/
+
+python发布包到pypi的踩坑记录 -配置【.pypirc】- rongpmcu - 博客园
+https://www.cnblogs.com/rongpmcu/p/7662821.html
 ```
 
 ## about me
