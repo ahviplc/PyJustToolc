@@ -3,8 +3,9 @@ PyJustToolc
 
     PyJustToolc(utoolc)
 
-PyJustToolc: ❤PyJustToolc(utoolc) > Python Tools For U (You)❤ >
-https://gitee.com/ahviplc/PyJustToolc
+PyJustToolc: ❤PyJustToolc(utoolc) > Python Tools For U (You)❤
+
+    https://gitee.com/ahviplc/PyJustToolc
 
 slogan
 ------
