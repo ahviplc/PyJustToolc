@@ -105,9 +105,9 @@ https://gitee.com/ahviplc/GoJustToolc
 setup.py:31
 ```markdown
 install_requires = [
+    'psutil>=5.8.0',
     'twine>=3.4.1',
     'wheel>=0.36.2',
-    'psutil>=5.8.0',
 ]
 ```
 
