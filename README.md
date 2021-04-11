@@ -91,16 +91,45 @@ https://gitee.com/ahviplc/GoJustToolc
 3. From source:
 > python setup.py install
 
+从gitee拉取源码
+> git clone https://gitee.com/ahviplc/PyJustToolc.git
+
+从github拉取源码
+> git clone https://github.com/ahviplc/PyJustToolc.git
+
+从github拉取源码 加速源拉取
+> git clone https://hub.fastgit.org/ahviplc/PyJustToolc.git
+
+cd PyJustToolc 进入项目根目录
+
+执行上述命令
+> python setup.py install
+
+或者从 https://pypi.org/project/utoolc/0.1.2/#files 从 https://pypi.org/project/utoolc/#files 下载最新版本 下载安装
+将下载的【utoolc-0.1.2.tar.gz】解压 执行上述命令
+> python setup.py install
+
+4. From source(whl) - 自己下载 *.whl 用以下命令手动安装:
+> pip install *.whl
+
+例如:从 https://pypi.org/project/utoolc/0.1.2/#files 从 https://pypi.org/project/utoolc/#files 下载最新版本 下载安装
+> pip install utoolc-0.1.2-py3-none-any.whl
+
 #### utoolc依赖的第三方包,第三方模块
 > 备注:本项目有依赖的第三方包,第三方模块
 
-一次性安装 官方镜像 pip
+> 提醒以下:如果使用 3. From source: 方式安装 则必须自己手动安装相关依赖
+一次性安装;
+
+> 提醒以下:如果使用 4. From source(whl) 则不需要,会自动拉取所需依赖并且自动安装.
+
+官方镜像 pip
 > pip install requirements.txt
 
 一次性安装 阿里云镜像 pip
 > pip install requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 
-> 如果你不想手动安装所需依赖,没关系,安装utoolc包的时候,会自动安装所需依赖,因为已在setup.py中配置了.
+> 如果你不想手动安装所需依赖,没关系,安装utoolc包(从pypi上或者手动使用*.whl安装)的时候,会自动安装所需依赖,因为已在setup.py中配置了.
 
 setup.py:31
 ```markdown
