@@ -6,6 +6,8 @@ do 做什么 做它 do it.
 @Date    : 2021-4-9 17:03:03
 @Author  : LC
 """
+import platform
+import psutil
 
 import requests
 from utoolc.utils import utils
@@ -68,3 +70,33 @@ def do_cverter(from_formats, to_formats, from_file, to_file):
         print('...do...do_cverter...success...')
         with open(to_file, "wb") as f:
             f.write(response.content)
+
+
+# do => Py运行时工具类
+# 获取当前操作系统名称
+# mac -> Darwin
+# win -> Windows
+# linux -> Linux
+def get_os():
+    return platform.system()
+
+
+# 获取当前系统的CPU核数量
+# 使用 psutil 第三方模块
+def get_num_cpu():
+    return psutil.cpu_count()
+
+
+# 是否是mac系统
+def is_mac_os():
+    return get_os() == 'Darwin'
+
+
+# 是否是win系统
+def is_win_os():
+    return get_os() == 'Windows'
+
+
+# 是否是linux系统
+def is_linux_os():
+    return get_os() == 'Linux'

@@ -91,6 +91,44 @@ https://gitee.com/ahviplc/GoJustToolc
 3. From source:
 > python setup.py install
 
+#### utoolc依赖的第三方包,第三方模块
+> 备注:本项目有依赖的第三方包,第三方模块
+
+一次性安装 官方镜像 pip
+> pip install requirements.txt
+
+一次性安装 阿里云镜像 pip
+> pip install requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+
+> 如果你不想手动安装所需依赖,没关系,安装utoolc包的时候,会自动安装所需依赖,因为已在setup.py中配置了.
+
+setup.py:31
+```markdown
+install_requires = [
+    'twine>=3.4.1',
+    'wheel>=0.36.2',
+    'psutil>=5.8.0',
+]
+```
+
+> 三方包的说明如下
+```markdown
+把包上传pypi使用-Twine is a utility for publishing Python packages on PyPI.
+twine 
+> https://pypi.org/project/twine/
+
+打包使用-This library is the reference implementation of the Python wheel packaging standard, as defined in PEP 427(https://www.python.org/dev/peps/pep-0427/).
+It has two different roles:
+1. A setuptools extension for building wheels that provides the bdist_wheel setuptools command
+2. A command line tool for working with wheel files
+It should be noted that wheel is not intended to be used as a library, and as such there is no stable, public API.
+wheel
+> https://pypi.org/project/wheel/
+
+一款用Py写的跨平台的过程和系统监控库-Cross-platform lib for process and system monitoring in Python
+> https://pypi.org/project/psutil/
+```
+
 ### 使用包
 ```python
 import utoolc
