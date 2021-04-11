@@ -275,6 +275,26 @@ twine 提示输入 pypi 账号和密码，上传成功否就能在自己的pypi�
 > twine upload --skip-existing dist/* 
 ```
 
+### 添加了 setup.cfg 和 MANIFEST.in
+setup.cfg
+> 参考了自己打的源码包 直接拿来用了 也可参考别人以后完善它 https://github.com/dabeaz/curio/blob/master/setup.cfg
+```text
+[egg_info]
+tag_build = 
+tag_date = 0
+```
+
+MANIFEST.in
+> 参考了 https://github.com/dabeaz/curio/blob/master/MANIFEST.in
+```text
+recursive-include examples *
+recursive-include docs *
+recursive-include tests *
+recursive-exclude __pycache__ *.pyc *.pyo
+include README.rst
+include README.md
+```
+
 ## 待完善,待复看
 ```markdown
 packages=find_packages(where='PyJustToolc', include=('utoolc','example'),exclude=("*.tests", "*.tests.*", "tests.*", "tests")), # include all packages under automated
@@ -382,6 +402,15 @@ https://github.com/msabramo/pydocverter
 
 Docverter/docverter-ruby: The official Docverter Ruby SDK
 https://github.com/docverter/docverter-ruby
+
+Python setup.py和MANIFEST.in文件
+https://blog.csdn.net/fragmentalice/article/details/44833013
+
+关于python中的setup.py
+https://blog.csdn.net/xluren/article/details/41114779
+
+做PYTHON项目需要一个MANIFEST.IN，它应该是什么？
+http://www.dovov.com/pythonmanifest-in.html
 ```
 
 ## about me

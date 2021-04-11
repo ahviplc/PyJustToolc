@@ -20,8 +20,8 @@ here = os.path.abspath(os.path.dirname(__file__))  # 'C:\\_developSoftKu\\ideaIU
 # with open(os.path.join(here, 'requirements.txt'), encoding='utf-8') as f:
 #     REQUIREMENTS = f.read()
 
-# 从 README.rst 读取出内容 当 LONG_DESCRIPTION
-with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+# 从 docs/README-PYPI.rst 读取出内容 当 LONG_DESCRIPTION
+with open(os.path.join(here, 'docs/README-PYPI.rst'), encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
 
 # 赋值给 long_description

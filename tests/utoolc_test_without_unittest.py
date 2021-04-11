@@ -13,7 +13,7 @@ import utoolc
 def test2():
     # 使用相对路径
     utoolc.do.do_cverter('markdown', 'rst', '../README.md', '../README_ok.rst')
-    utoolc.do.do_cverter("rst", "markdown", '../README.rst', '../README_ok.md')
+    utoolc.do.do_cverter("rst", "markdown", '../docs/README.rst', '../README_ok.md')
 
 
 def test3():
