@@ -21,5 +21,4 @@ from .easy import easy_say
 # 1) 以“import 模块名”的形式导入模块。通过该方式导入模块后，总可以通过模块名前缀（如果为模块指定了别名，则可以使用模快的别名作为前缀）来调用模块内的所有成员（除了以下划线开头命名的成员）
 # 2) 以“from 模块名 import 成员”的形式直接导入指定成员。使用此方式导入的模块，__all__ 变量即便设置，也形同虚设。
 __all__ = ['do', 'easy_say', 'get_random', 'print_msg_to_log_model', 'utils', 'start_to_end_time_consuming',
-           '__version__',
-           '__author__', '__email__']
+           '__version__', '__author__', '__email__']
