@@ -31,6 +31,7 @@ long_description = LONG_DESCRIPTION
 
 install_requires = [
     'psutil>=5.8.0',
+    'requests>=2.25.1',
     'twine>=3.4.1',
     'wheel>=0.36.2',
 ]
