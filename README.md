@@ -123,11 +123,13 @@ cd PyJustToolc 进入项目根目录
 
 > 提醒以下:如果使用 4. From source(whl) 则不需要,会自动拉取所需依赖并且自动安装.
 
-官方镜像 pip
-> pip install requirements.txt
+> 使用requirements.txt安装类库 进行一次性安装
 
-一次性安装 阿里云镜像 pip
-> pip install requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+使用官方镜像 pip
+> pip install -r requirements.txt
+
+使用阿里云镜像 pip
+> pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 
 > 如果你不想手动安装所需依赖,没关系,安装utoolc包(从pypi上或者手动使用*.whl安装)的时候,会自动安装所需依赖,因为已在setup.py中配置了.
 
