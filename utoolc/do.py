@@ -8,10 +8,25 @@ do 做什么 做它 do it.
 """
 import platform
 import psutil
-
 import requests
-from utoolc.utils import utils
 
+# 使用 utoolc.do 统一使用入口 当然其他入口也开放 自由发挥
+# 将所有的工具函数和功能Python模块(Module)(模块能定义函数，类和变量，模块里也能包含可执行的代码)暴露出去
+# 在do.py模块暴露出去之后 可以 utoolc.do 进行访问操作
+# 写法一 推荐 使用绝对路径 更直观 手动导入 更可控 目前使用这个方案吧
+from utoolc import get_random
+from utoolc.easy import easy_say
+from utoolc.utils import utils, print_msg_to_log_model, start_to_end_time_consuming
+
+
+# # 写法二
+# from . import get_random
+# from .easy import easy_say
+# from .utils import utils, print_msg_to_log_model, start_to_end_time_consuming
+# # 写法三 这个写法 其他Py文件有新增功能代码,这里就能暴露出去 这里*的意思是导入所有 方法一和二还得do.py代码里 对应添加 但这个也是有利有弊 比如没有方法一 直观可控
+# from utoolc import *  # 故 utils.print_a_line() 直接使用没有问题
+# from utoolc.easy import *
+# from utoolc.utils import *
 
 # do => 格式的互转
 # 将 input formats 输入格式 转换为 output formats 输出格式 - A格式与B格式的互转

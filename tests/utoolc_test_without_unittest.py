@@ -28,11 +28,16 @@ def test3():
 
 
 def test4():
+    # 使用 utoolc.do 统一使用入口 当然其他入口也开放 自由发挥
+    utoolc.do.utils.print_a_line()
+    print(utoolc.do.get_num_cpu())
+    print(utoolc.do.get_random.get_random_str_with_counts(3))
     print(utoolc.do.get_os())
     print(utoolc.do.is_mac_os())
     print(utoolc.do.is_win_os())
     print(utoolc.do.is_linux_os())
     print(utoolc.do.get_num_cpu())
+    utoolc.do.utils.print_a_line()
 
 
 if __name__ == '__main__':
