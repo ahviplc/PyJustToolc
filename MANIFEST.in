@@ -2,5 +2,6 @@ recursive-include examples *
 recursive-include docs *
 recursive-include tests *
 recursive-exclude __pycache__ *.pyc *.pyo
+recursive-exclude tests __pycache__ *.pyc *.pyo
 include README.rst
 include README.md

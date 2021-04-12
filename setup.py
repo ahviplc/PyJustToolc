@@ -43,7 +43,7 @@ keywords = [
 ]
 
 name = 'utoolc'
-platforms = ['win', 'linux']
+platforms = ['Windows', 'MacOS', 'Linux']
 # github
 # url = 'https://github.com/ahviplc/PyJustToolc'
 # gitee
@@ -53,6 +53,9 @@ classifiers = [
     'Development Status :: 3 - Alpha',
     'Topic :: Text Processing',
     'License :: OSI Approved :: MIT License',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.8',
 ]

@@ -184,8 +184,8 @@ if __name__ == '__main__':
 
 ### 快速一览
 
-常用一次性执行sdist和bdist_wheel和bdist --format=zip三个 打包生成一个源码包*.tar.gz和一个*.whl和一个*.zip即可
-> python setup.py sdist bdist_wheel bdist --format=zip
+常用一次性执行sdist和bdist_wheel和bdist --formats=zip三个 打包生成一个源码包*.tar.gz和一个*.whl和一个*.zip即可
+> python setup.py sdist bdist_wheel bdist --formats=zip
 
 Only one sdist may be uploaded per release.
 所以一次性执行sdist和bdist_wheel,打包生成一个源码包*.tar.gz和一个*.whl
@@ -311,15 +311,17 @@ test_suite
 制作windows下的安装包
 python setup.py bdist_wininst  # 创建"*.exe"的文件
 python setup.py bdist_msi  # 创建"*.msi"的文件 可用
-python setup.py bdist --format=msi  # 同样是创建"*.msi"的文件
+python setup.py bdist --formats=msi  # 同样是创建"*.msi"的文件
 
 制作rpm包
 > python setup.py bdist_rpm  # 创建"*.rpm"的文件，该命令需要在Linux操作系统上执行！
-> python setup.py bdist --format=rpm  # 同上
+> python setup.py bdist --formats=rpm  # 同上
 
 制作压缩文件
-> python setup.py bdist --format=zip  # 创建"*.zip"压缩文件
-> python setup.py bdist --format=gztar  # 创建"*.tar.gz"文件
+> python setup.py bdist --formats=zip  # 创建"*.zip"压缩文件
+> python setup.py bdist --formats=gztar  # 创建"*.tar.gz"文件
+其中
+> python setup.py bdist --formats=zip  等价于  python setup.py sdist
 ```
 
 ### 将python打包成egg包或者whl包(本质上是一个zip文件)
@@ -486,6 +488,21 @@ https://blog.csdn.net/xluren/article/details/41114779
 
 做PYTHON项目需要一个MANIFEST.IN，它应该是什么？
 http://www.dovov.com/pythonmanifest-in.html
+
+2. Writing the Setup Script — Python 3.9.4 documentation
+https://docs.python.org/3/distutils/setupscript.html
+
+2. Writing the Setup Script — Python 3.9.4 documentation
+https://docs.python.org/3/distutils/setupscript.html#other-options
+
+9. API Reference — Python 3.9.4 documentation - 里面有 packages 等的参数使用说明
+https://docs.python.org/3/distutils/apiref.html#distutils.core.setup
+
+python-aiplatform/setup.py at master · googleapis/python-aiplatform · GitHub - 里面的【platforms="Posix; MacOS X; Windows",】
+https://github.com/googleapis/python-aiplatform/blob/master/setup.py
+
+Docutils: Documentation Utilities
+https://docutils.sourceforge.io/
 ```
 
 ## about me
