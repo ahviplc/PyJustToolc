@@ -38,16 +38,14 @@ install_requires = [
 
 license = 'LICENSE'
 
-keywords = [
-    "utoolc", "PyJustToolc", "Python Tools For U (You)"
-]
+keywords = ['PyJustToolc', 'utoolc', 'Python Tools For U(You)']
 
 name = 'utoolc'
 platforms = ['Windows', 'MacOS', 'Linux']
 # github
-# url = 'https://github.com/ahviplc/PyJustToolc'
+url = 'https://github.com/ahviplc/PyJustToolc'
 # gitee
-url = 'https://gitee.com/ahviplc/PyJustToolc'
+# url = 'https://gitee.com/ahviplc/PyJustToolc'
 download_url = 'https://pypi.org/project/utoolc/#files'
 classifiers = [
     'Development Status :: 3 - Alpha',
