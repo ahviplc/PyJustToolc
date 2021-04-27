@@ -16,7 +16,7 @@ import requests
 # 写法一 推荐 使用绝对路径 更直观 手动导入 更可控 目前使用这个方案吧
 from utoolc import get_random
 from utoolc.easy import easy_say
-from utoolc.utils import utils, print_msg_to_log_model, start_to_end_time_consuming
+from utoolc.utils import utils, print_msg_to_log_model, start_to_end_time_consuming, my_logger
 
 
 # # 写法二

@@ -1,3 +1,7 @@
+"""
+get_random.py
+获取随机字符
+"""
 import random
 import string
 

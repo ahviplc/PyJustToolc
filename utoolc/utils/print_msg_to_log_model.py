@@ -1,9 +1,6 @@
-import sys
-import os
-
 """
 print_msg_to_log_model.py
-监听所有的print到log日志 封装类
+监听所有的print到log日志 封装类 PrintLogger
 Version: 1.0
 Author: LC
 DateTime: 2019年3月11日14:49:32
@@ -11,6 +8,8 @@ UpdateTime:
 一加壹博客最Top-一起共创1+1>2的力量！~LC
 LC博客url: http://oneplusone.top/index.html
 """
+import sys
+import os
 
 
 class PrintLogger(object):

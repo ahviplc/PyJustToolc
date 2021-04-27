@@ -38,8 +38,38 @@ def test4():
     start_and_end(True, 1)
 
 
+def test5():
+    from utoolc.utils.my_logger import MyLogger
+    # debug
+    log = MyLogger('test-log-all-out.log', level='debug')
+    log.logger.debug('debug')
+    log.logger.info('info')
+    log.logger.warning('警告')
+    log.logger.error('报错')
+    log.logger.critical('严重')
+    # error
+    error_log = MyLogger('test-log-error-out.log', level='error')
+    error_log.logger.error('error')
+
+
+def test6():
+    from utoolc.do import my_logger
+    # debug
+    log = my_logger.MyLogger('test-log-all-out2.log', level='debug')
+    log.logger.debug('debug')
+    log.logger.info('info')
+    log.logger.warning('警告')
+    log.logger.error('报错')
+    log.logger.critical('严重')
+    # error
+    error_log = my_logger.MyLogger('test-log-error-out2.log', level='error')
+    error_log.logger.error('error')
+
+
 if __name__ == '__main__':
     test()
     # test2()
     # test3()
-    test4()
+    # test4()
+    # test5()
+    # test6()

@@ -11,3 +11,6 @@ if __name__ == '__main__':
     print(utoolc.do.get_random.get_random_str_with_counts(3))
     utoolc.do.utils.print_a_line()
     utoolc.utils.print_a_line()
+    # 日志
+    log = utoolc.do.my_logger.MyLogger('test-log-all-out.log', level='debug')
+    log.logger.debug('debug')

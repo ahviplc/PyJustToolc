@@ -1,3 +1,16 @@
+"""
+utils.py
+utils工具类 封装类 若干函数
+Version: 1.0
+Author: LC
+DateTime: 2021年4月27日14:57:47
+UpdateTime:
+一加壹博客最Top-一起共创1+1>2的力量！~LC
+LC博客url: http://oneplusone.top/index.html
+
+Python + logging 输出到屏幕，将log日志写入文件 - nancy05 - 博客园
+https://www.cnblogs.com/nancyzhu/p/8551506.html
+"""
 import datetime
 import random
 import string

@@ -1,8 +1,14 @@
 """
-start_to_end_ time_consuming.py 开始到结束 耗时工具类
-Author:LC
+start_to_end_ time_consuming.py
+开始到结束 耗时工具类 函数
+Version: 1.0
+Author: LC
+DateTime: 2021年4月27日15:07:09
+UpdateTime:
+一加壹博客最Top-一起共创1+1>2的力量！~LC
+LC博客url: http://oneplusone.top/index.html
 """
-import os,sys
+# import os, sys
 import time
 import datetime
 
